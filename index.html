@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Interface de connexion</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="signin-btn">Se Connecter</button>
+                <button type="button" class="signup-btn">Créer un compte</button>
+            </div>
+            <div class="Socials-icones">
+                <img src="public/fb.webp">
+                <img src="public/twiter.png">
+                <img src="public/google.png">
+            </div>
+            <form id="Connexion" class="Formulaire">
+                <div id="msgCrr" style="font-size: 14px; margin-bottom: 10px;">
+                    <span></span>
+                </div>
+                <div id="id-container">
+                    <input type="number" id="ID" placeholder="Entrez votre ID">
+                    <small id="messageerreur"> Ce champ est obligatoire !</small>
+                </div>
+                <div id="loginPassword-container">
+                    <input type="password" id="loginPassword" placeholder="Mot de passe" class="password">
+                    <small id="messageerreur">  Ce champ est obligatoire !</small>
+                </div>
+                <!-- <input type="checkbox" class="checkbox"><span>Je confirme</span> -->
+                <button type="submit" class="boutton">Connectez Vous</button>
+            </form>
+             <form id="Enregistrement" class="Formulaire">
+                <div id="msgErr" style="font-size: 14px; margin-top: 8px;">
+                    <span></span>
+                </div>
+                <div id="username-container">
+                    <input type="text" id="username" placeholder="Entrez votre Nom d'utilisateur">
+                    <small id="messageerreur">  Ce champ est obligatoire !</small>
+                </div>
+                <div id="email-container">
+                    <input type="email" id="email" placeholder="Entrez votre Email">
+                    <small id="messageerreur"> Ce champ est obligatoire !</small>
+                </div>
+                <div id="registerPassword-container">
+                    <input type="password" id="registerPassword" placeholder="Mot de passe" class="password">
+                    <small id="messageerreur"> Ce champ est obligatoire !</small>
+                </div>
+                <div id="confirm-container">
+                    <input type="password" id="confirmPassword" placeholder=" Confirmer mot de passe" class="password">
+                    <small id="messageerreur">  Ce champ est obligatoire !</small>
+                </div>
+                <!-- <input type="checkbox" class="checkbox"><span>Je comprends toutes les règles</span> -->
+                <button type="submit" id="bouttonEnrégistrer" class="boutton">Enrégistrer Vous</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"> </script>
+</body>
+</html>
